@@ -1,0 +1,41 @@
+header {
+  background-color: #244751;
+  color: #E8FDFF;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: whitesmoke;
+}
+
+
+main {
+  background-color: white;
+}
+
+
+main {
+  background-color: white;
+  padding: 16px;
+}
+
+
+.post {
+  margin-bottom: 48px;
+}
+
+
+.post .user-info img {
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #999;
+  border: solid 2px #244751;
+}
+
+h1 {
+  padding-left: 25px;
+}
+
+main {
+  margin-top: 45px;
+}
