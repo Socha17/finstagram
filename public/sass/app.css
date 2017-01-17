@@ -1,0 +1,46 @@
+/* line 1, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+header {
+  background-color: #244751;
+  color: #E8FDFF;
+}
+
+/* line 7, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: blue;
+}
+
+/* line 13, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+main {
+  background-color: white;
+}
+
+/* line 18, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+main {
+  background-color: white;
+  padding: 16px;
+}
+
+/* line 24, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+.post {
+  margin-bottom: 48px;
+}
+
+/* line 29, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+.post .user-info img {
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #999;
+  border: solid 2px #244751;
+}
+
+/* line 35, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+h1 {
+  padding-left: 25px;
+}
+
+/* line 39, /Users/mattsocha/code/finstagram/public/stylesheets/app.scss */
+main {
+  margin-top: 45px;
+}
+
+/*# sourceMappingURL=../sass/app.map */
