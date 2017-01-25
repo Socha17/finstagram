@@ -1,0 +1,36 @@
+
+
+
+
+<header>
+  <img src="/images/finLogo.png">
+</header>
+<main role="main">
+  <!--Goes through each post and enters content  -->
+  <% @posts.each do |post| %>
+    <article class="post">
+      <div class="user-info">
+        <img src="<%= post[:avatar_url] %>" alt="<%= post[:username] %>">
+        <h2><%= post[:username] %></h2>
+        <h3><%= post[:humanized_time_ago] %></h3>
+      </div>
+      <a class="photo" href="#">
+        <img src="<%= post[:photo_url] %>" alt="post from <%= post[:username] %>">
+      </a>
+      <div class="actions">
+        <%= post[:like_count] %> likes
+        <span class="comment-count"><%= post[:comment_count] %> comment</span>
+      </div>
+      <ul class="comments">
+        <!-- Goes through each comment and enters content  -->
+        <% post[:comments].each do |comment| %>
+          <li>
+            <p>
+              <%= comment[:username] %>: <%= comment[:text] %>
+            </p>
+          </li>
+        <% end %>
+      </ul>
+    </article>
+  <% end %>
+</main>

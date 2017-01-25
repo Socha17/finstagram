@@ -10,10 +10,29 @@ def humanized_time_ago(time_ago_in_minutes)
 end
 
 
+# How to make a loop
+# names.each do |name|
+  # puts "Hello,  #{name}"
+# end
+
+# def name_length(name
+# if password.length > 6
+  # puts "OKAY!"
+# else
+  # puts "Create a longer password"
+# end
+    # name.length
+# end
+
+
+# call method
+
+# password_length("MEMES")
+
 
 get '/' do
 
-  post_shark = {
+  @post_shark = {
     username: "sharky_j",
     avatar_url: "http://naserca.com/images/sharky_j.jpg",
     photo_url: "http://naserca.com/images/shark.jpg",
@@ -26,7 +45,7 @@ get '/' do
     }]
   }
 
-  post_whale = {
+  @post_whale = {
     username: "kirk_whalum",
     avatar_url: "http://naserca.com/images/kirk_whalum.jpg",
     photo_url: "http://naserca.com/images/whale.jpg",
@@ -39,7 +58,7 @@ get '/' do
     }]
   }
 
-  post_marlin = {
+  @post_marlin = {
     username: "marlin_peppa",
     avatar_url: "http://naserca.com/images/marlin_peppa.jpg",
     photo_url: "http://naserca.com/images/marlin.jpg",
@@ -52,9 +71,11 @@ get '/' do
     }]
   }
 
-  [post_shark, post_whale, post_marlin].to_s
+  @posts = [@post_shark, @post_whale, @post_marlin]
+
 
 
   # puts humanized_time_ago(2)
+erb(:index)
 
 end
